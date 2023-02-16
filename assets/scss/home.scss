@@ -1,0 +1,203 @@
+@import "mixin";
+@import "var";
+
+header {
+    background-color: $c-background;
+    background-image: url('../images/g10.png'), url('../images/g12.png');
+    background-repeat: no-repeat;
+    background-position: left 0 top, right 0 bottom;
+
+    .header {
+        @include flex(center, '', column, $trim);
+        padding: $big 0;
+
+        .top {
+            margin-bottom: $box-spacing + $box-spacing;
+
+            p {
+                @include text('', $c-orange, center, 500, 16px);
+                margin-bottom: $trim-small + 3px;
+            }
+
+            h1 {
+                @include text('', $c-black-02, center, 700, $large);
+                width: 100%;
+                max-width: 700px;
+
+                span {
+                    @include text('', $c-purple, '', 700, $large);
+                }
+            }
+        }
+
+        .inputs {
+            @include flex('', space-between);
+            background-color: $c-white;
+            padding: $box-spacing + $box-spacing;
+            width: 100%;
+
+            input,
+            .city {
+                width: 100%;
+                max-width: 348px;
+            }
+
+            input,
+            select {
+                border: 0;
+                background-color: $c-input;
+                height: $large;
+                @include text('', $c-text-01, '', 400, 16px);
+                background-color: $c-input;
+                border-radius: $small;
+                padding-left: $large;
+            }
+
+            input::placeholder,
+            label {
+                @include text('', $c-text-01, '', 400, 16px);
+            }
+
+            .name {
+                @include flex(center);
+
+                input {
+                    background-image: url('../images/search.png');
+                    background-color: $c-input;
+                    background-repeat: no-repeat;
+                    background-position: 15px center;
+                }
+            }
+
+            .city {
+                select {
+                    width: 100%;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    border-radius: $small;
+                    background-image: url('../images/location.png'), url('../images/Vector.png');
+                    background-repeat: no-repeat;
+                    background-position: 15px center, calc(100% - 20px) center;
+                }
+
+                select:focus-visible {
+                    outline: none;
+                }
+            }
+
+            button {
+                height: $large;
+                width: 100%;
+                max-width: 170px;
+                border-radius: $small;
+
+                @include bp(max-width, $bp-medium) {
+                    max-width: 100%;
+                }
+            }
+
+            @include bp(max-width, $bp-medium) {
+                @include flex('', '', column, $trim);
+            }
+        }
+    }
+}
+
+main {
+    .wrapper-content {
+        padding: $big 0;
+
+        .top {
+            @include flex('', space-between);
+            margin-bottom: 41px;
+
+            h2 {
+                @include text('', $c-black-02, '', 700, 32px);
+
+                @include bp(max-width, $bp-medium) {
+                    text-align: center
+                }
+            }
+
+            .wrapper-buttons {
+                @include flex('', '', '', $trim);
+                width: 100%;
+                max-width: $big + $big;
+                border: 1px solid $c-border;
+                padding: $small;
+                border-radius: $small + 1px;
+
+                button {
+                    height: $trim + 2px;
+                    width: 100%;
+                    max-width: $big;
+                    border-radius: $small + 1px;
+                }
+
+                @include bp(max-width, $bp-medium) {
+                    @include flex('', space-between);
+                    max-width: 100%;
+                }
+            }
+
+            @include bp(max-width, $bp-medium) {
+                @include flex('', '', column, $trim);
+            }
+        }
+
+        .blocks {
+            @include grid('', '', $trim, 1fr 1fr 1fr);
+
+            .card {
+                border: 1px solid $c-border;
+                background-color: $c-white;
+                width: 100%;
+                max-width: 385px;
+                border-radius: $gap;
+
+                .bottom {
+                    @include flex('', '', column, 16px);
+                    padding: $trim-small;
+
+                    h3 {
+                        @include text('', $c-black-02, '', 700, $box-spacing);
+                    }
+
+                    p {
+                        @include text('', $c-black, '', 400, 16px);
+                    }
+
+                    .local {
+                        @include flex(center, '', '', $trim-small);
+                    }
+                }
+            }
+
+            @include bp(max-width, $bp-medium) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+button {
+    &.purple {
+        background-color: $c-purple;
+
+        span {
+            @include text('', $c-white, '', 700, 14px);
+        }
+    }
+
+    &.white {
+        background-color: $c-white;
+
+        span {
+            @include text('', $c-purple, '', 700, 14px);
+        }
+    }
+
+    &:hover {
+        opacity: .85;
+    }
+}

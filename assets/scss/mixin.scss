@@ -1,0 +1,75 @@
+@mixin bp($feature, $value) {
+    @if $feature =='min-width' {
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    }
+
+    @else if $feature =='max-width' {
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+
+@mixin flex($align: '', $justify: '', $direction: '', $gap: '') {
+    display: flex;
+
+    @if $align !='' {
+        align-items: $align;
+    }
+
+    @if $justify !='' {
+        justify-content: $justify;
+    }
+
+    @if $direction !='' {
+        flex-direction: $direction;
+    }
+
+    @if $gap !='' {
+        gap: $gap;
+    }
+}
+
+@mixin grid($align: '', $justify: '', $gap: '', $columns: '') {
+    display: grid;
+
+    @if $align !='' {
+        align-items: $align;
+    }
+
+    @if $justify !='' {
+        justify-content: $justify;
+    }
+
+    @if $gap !='' {
+        gap: $gap;
+    }
+
+    @if $columns !='' {
+        grid-template-columns: $columns;
+    }
+}
+
+@mixin text($font: '', $color: '', $align: '', $weigth: '', $size: '') {
+    @if $font !='' {
+        font-family: $font;
+    }
+
+    @if $color !='' {
+        color: $color;
+    }
+
+    @if $align !='' {
+        text-align: $align;
+    }
+
+    @if $weigth !='' {
+        font-weight: $weigth;
+    }
+
+    @if $size !='' {
+        font-size: $size;
+    }
+}

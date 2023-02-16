@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+/* line 4, ../scss/home.scss */
+header {
+  background-color: #F8F8FF;
+  background-image: url("../images/g10.png"), url("../images/g12.png");
+  background-repeat: no-repeat;
+  background-position: left 0 top, right 0 bottom;
+}
+/* line 10, ../scss/home.scss */
+header .header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0;
+}
+/* line 14, ../scss/home.scss */
+header .header .top {
+  margin-bottom: 40px;
+}
+/* line 17, ../scss/home.scss */
+header .header .top p {
+  color: #E45858;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+/* line 22, ../scss/home.scss */
+header .header .top h1 {
+  color: #121214;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  width: 100%;
+  max-width: 700px;
+}
+/* line 27, ../scss/home.scss */
+header .header .top h1 span {
+  color: #6246EA;
+  font-weight: 700;
+  font-size: 50px;
+}
+/* line 33, ../scss/home.scss */
+header .header .inputs {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 40px;
+  width: 100%;
+}
+/* line 39, ../scss/home.scss */
+header .header .inputs input,
+header .header .inputs .city {
+  width: 100%;
+  max-width: 348px;
+}
+/* line 45, ../scss/home.scss */
+header .header .inputs input,
+header .header .inputs select {
+  border: 0;
+  background-color: #F4F4FF;
+  height: 50px;
+  color: #7C7C8A;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #F4F4FF;
+  border-radius: 5px;
+  padding-left: 50px;
+}
+/* line 56, ../scss/home.scss */
+header .header .inputs input::placeholder,
+header .header .inputs label {
+  color: #7C7C8A;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* line 61, ../scss/home.scss */
+header .header .inputs .name {
+  display: flex;
+  align-items: center;
+}
+/* line 64, ../scss/home.scss */
+header .header .inputs .name input {
+  background-image: url("../images/search.png");
+  background-color: #F4F4FF;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+/* line 73, ../scss/home.scss */
+header .header .inputs .city select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+  background-image: url("../images/location.png"), url("../images/Vector.png");
+  background-repeat: no-repeat;
+  background-position: 15px center, calc(100% - 20px) center;
+}
+/* line 83, ../scss/home.scss */
+header .header .inputs .city select:focus-visible {
+  outline: none;
+}
+/* line 88, ../scss/home.scss */
+header .header .inputs button {
+  height: 50px;
+  width: 100%;
+  max-width: 170px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  /* line 88, ../scss/home.scss */
+  header .header .inputs button {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 33, ../scss/home.scss */
+  header .header .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* line 107, ../scss/home.scss */
+main .wrapper-content {
+  padding: 100px 0;
+}
+/* line 110, ../scss/home.scss */
+main .wrapper-content .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+/* line 114, ../scss/home.scss */
+main .wrapper-content .top h2 {
+  color: #121214;
+  font-weight: 700;
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  /* line 114, ../scss/home.scss */
+  main .wrapper-content .top h2 {
+    text-align: center;
+  }
+}
+/* line 122, ../scss/home.scss */
+main .wrapper-content .top .wrapper-buttons {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #EAEAEA;
+  padding: 5px;
+  border-radius: 6px;
+}
+/* line 130, ../scss/home.scss */
+main .wrapper-content .top .wrapper-buttons button {
+  height: 32px;
+  width: 100%;
+  max-width: 100px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  /* line 122, ../scss/home.scss */
+  main .wrapper-content .top .wrapper-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 110, ../scss/home.scss */
+  main .wrapper-content .top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* line 148, ../scss/home.scss */
+main .wrapper-content .blocks {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* line 151, ../scss/home.scss */
+main .wrapper-content .blocks .card {
+  border: 1px solid #EAEAEA;
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 385px;
+  border-radius: 10px;
+}
+/* line 158, ../scss/home.scss */
+main .wrapper-content .blocks .card .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 15px;
+}
+/* line 162, ../scss/home.scss */
+main .wrapper-content .blocks .card .bottom h3 {
+  color: #121214;
+  font-weight: 700;
+  font-size: 20px;
+}
+/* line 166, ../scss/home.scss */
+main .wrapper-content .blocks .card .bottom p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* line 170, ../scss/home.scss */
+main .wrapper-content .blocks .card .bottom .local {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 768px) {
+  /* line 148, ../scss/home.scss */
+  main .wrapper-content .blocks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* line 184, ../scss/home.scss */
+button.purple {
+  background-color: #6246EA;
+}
+/* line 187, ../scss/home.scss */
+button.purple span {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+}
+/* line 192, ../scss/home.scss */
+button.white {
+  background-color: #FFFFFF;
+}
+/* line 195, ../scss/home.scss */
+button.white span {
+  color: #6246EA;
+  font-weight: 700;
+  font-size: 14px;
+}
+/* line 200, ../scss/home.scss */
+button:hover {
+  opacity: .85;
+}

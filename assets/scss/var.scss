@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// Breakpoints
+
+$bp-xsmall: 320px;
+$bp-small: 599px;
+$bp-medium: 768px;
+$bp-large: 979px;
+$bp-xlarge: 1199px;
+
+// Spacing //
+
+$small: 5px;
+$gap: 10px;
+$box-spacing: 20px;
+$trim: 30px;
+$trim-small: 15px;
+$large: 50px;
+$x-large: 80px;
+$big: 100px;
+
+// Colors
+
+$c-purple: #6246EA;
+$c-black-02: #121214;
+$c-text-01: #7C7C8A;
+$c-orange: #E45858;
+$c-background: #F8F8FF;
+$c-border: #EAEAEA;
+$c-input: #F4F4FF;
+$c-white: #FFFFFF;
+$c-black: #000000;
+
+// Typography
+
+$f-stack-sans: 'Roboto', sans-serif;
+
+// Body Copy
+
+$f-size-default: 20px;

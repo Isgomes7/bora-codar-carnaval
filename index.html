@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Carnaval</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/carnaval.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container-head">
+            <div class="header">
+                <div class="top">
+                    <p>FIND YOUR BLOCK</p>
+                    <h1>Encontre os <span>melhores blocos</span> de carnaval 2023</h1>
+                </div>
+                <div class="inputs">
+                    <div class="name">
+                        <input id="input" type="text" placeholder="Pesquise por nome">
+                        <!-- <img src="assets/images/search.png" alt=""> -->
+                    </div>
+                    <div class="city">
+                        <!-- <img class="local" src="assets/images/location.png" alt=""> -->
+                        <select name="city" id="city">
+                            <option value="" selected>Selecione uma cidade</option>
+                            <option value="São Paulo">São Paulo</option>
+                            <option value="Florianópolis">Florianópolis</option>
+                            <option value="Curitiba">Curitiba</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Porto Alegre">Porto Alegre</option>
+                        </select>
+                        <!-- <img class="arrow" src="assets/images/Vector.png" alt=""> -->
+                    </div>
+                    <button class="purple"><span>BUSCAR AGORA</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <div class="wrapper-content">
+                <div class="top">
+                    <h2>Blocos recomendados</h2>
+                    <div class="wrapper-buttons">
+                        <button class="purple"><span>LISTA</span></button>
+                        <button class="white"><span>MAPA</span></button>
+                    </div>
+                </div>
+                <div id="myList" class="blocks">
+                    <div class="card salvador">
+                        <img src="assets/images/img-01.png" alt="">
+                        <div class="bottom">
+                            <h3>O Python do vovô não sobe mais</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>Salvador - BA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card florianopolis">
+                        <img src="assets/images/img-02.png" alt="">
+                        <div class="bottom">
+                            <h3>Todo mundo null</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>Florianópolis - SC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card curitiba">
+                        <img src="assets/images/img-03.png" alt="">
+                        <div class="bottom">
+                            <h3>Hoje dou exception</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>Curitiba - PR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card salvador">
+                        <img src="assets/images/img-04.png" alt="">
+                        <div class="bottom">
+                            <h3>Manda Node</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>Salvador - BA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card saopaulo">
+                        <img src="assets/images/img-05.png" alt="">
+                        <div class="bottom">
+                            <h3>Só no back-end</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card saopaulo">
+                        <img src="assets/images/img-06.png" alt="">
+                        <div class="bottom">
+                            <h3>Esse anel não é de Ruby</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card riodejaneiro">
+                        <img src="assets/images/img-07.png" alt="">
+                        <div class="bottom">
+                            <h3>Pimenta no C# dos outros é refresco</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>Rio de Janeiro - RJ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card portoalegre">
+                        <img src="assets/images/img-08.png" alt="">
+                        <div class="bottom">
+                            <h3>EnCACHE aqui</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>Porto Alegre - RS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card saopaulo">
+                        <img src="assets/images/img-09.png" alt="">
+                        <div class="bottom">
+                            <h3>Não valho nada mas JAVA li</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <div class="local">
+                                <img src="assets/images/location.png" alt="">
+                                <p>São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="attribution">
+            <p>
+                Coded by <a href="https://github.com/Isgomes7" title="Isgomes7">ISGOMES7</a> 👻.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
